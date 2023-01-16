@@ -1,9 +1,15 @@
 .copy {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
+  font-size: 12px;
+  cursor: pointer;
 
   .icon {
-    margin-right: 4px;
+    margin-right: 1px;
+    width: 16px;
+    height: 16px;
   }
 }

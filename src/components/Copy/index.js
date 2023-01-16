@@ -1,9 +1,10 @@
 import './Copy.scss';
+import { HiOutlineClipboard, HiOutlineClipboardCheck } from 'react-icons/hi'
 
 function Copy() {
   return (
     <div className='copy'>
-      <span className='icon'>Icon</span>
+      <HiOutlineClipboard className='icon'/>
       <span className='text'>Copy</span>
     </div>
   )

@@ -16,7 +16,7 @@ function Transparency() {
           min='0'
           max='100'
         />
-        <span className='percent'>100%</span>
+        <span className='percent'>min=0, max = 100</span>
       </div>
       <div className='rgb-code-container'>
         <span>rgb(255, 255, 255, 1)</span>
