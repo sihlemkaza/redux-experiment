@@ -5,7 +5,7 @@ function Results() {
     { name: 'red', title: 'R', right_symbol: '+' },
     { name: 'gren', title: 'G', right_symbol: '+' },
     { name: 'blue', title: 'B', right_symbol: '=' },
-    { name: 'final', title: null, right_symbol: null },
+    { name: 'final', title: null, right_symbol: null }
   ];
 
   function renderBoxes() {
@@ -18,8 +18,8 @@ function Results() {
     ));
   }
   return (
-    <div className='results'>
-      <span className='comp-title'>Results when opacity is 100%</span>
+    <div className='results com-wrapper'>
+      <span className='results-title'>Results when opacity is 100%</span>
       <div className='box-results'>
         {renderBoxes()}
       </div>

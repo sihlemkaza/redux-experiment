@@ -28,7 +28,7 @@ function RgbInputs() {
     ));
   }
   return (
-    <div className='rgb-inputs'>
+    <div className='rgb-inputs com-wrapper'>
       <span className='comp-title'>RGB</span>
       <div className='rgbs-container'>
         {renderInputs()}

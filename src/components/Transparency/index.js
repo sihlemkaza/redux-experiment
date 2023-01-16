@@ -3,8 +3,11 @@ import './Transparency.scss';
 
 function Transparency() {
   return (
-    <div className='transparency'>
-      <span className='comp-title'>Transparency (Opacity)</span>
+    <div className='transparency com-wrapper'>
+      <div className='comp-title-container'>
+        <span className='comp-title'>Transparency (Opacity)</span>
+        <div className='title-underline'></div>
+      </div>
       <div className='opacity-input-container'>
         <input
           type='number'
