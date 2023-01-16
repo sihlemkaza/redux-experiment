@@ -33,6 +33,10 @@ function RgbInputs() {
     setLocalRGB(updatedRGB);
   }
 
+  function getResultColor () {
+    return `rgb(${rgbaValues.red}, ${rgbaValues.green}, ${rgbaValues.blue})`;
+  }
+
   function renderInputs() {
     return rgbArray.map((rgbItem) => (
       <div className='input-container' key={rgbItem.name}>
@@ -60,8 +64,8 @@ function RgbInputs() {
         {renderInputs()}
       </div>
       <div className='rgb-code-container'>
-        <span>{`rgb(${rgbaValues.red}, ${rgbaValues.green}, ${rgbaValues.blue})`}</span>
-        <Copy/>
+        <span>{getResultColor()}</span>
+        <Copy copyText={getResultColor()}/>
       </div>
     </div>
   )
