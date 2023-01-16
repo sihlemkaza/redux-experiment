@@ -4,11 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//redux
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import colorValuesReducer from './redux/features/ColorValues';
+
+const store = configureStore({
+  reducer: {
+    rgbaValues: colorValuesReducer
+  }
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
