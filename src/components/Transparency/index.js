@@ -47,7 +47,7 @@ function Transparency() {
       </div>
       <div className='rgb-code-container'>
       <span>{rgbaCode()}</span>
-        <Copy/>
+        <Copy copyText={rgbaCode()}/>
       </div>
     </div>
   )
