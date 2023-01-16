@@ -1,12 +1,15 @@
 .copy {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  font-size: 12px;
   cursor: pointer;
+  font-size: 12px;
 
+  .clipboard-container, .copy-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  
   .icon {
     margin-right: 1px;
     width: 16px;
